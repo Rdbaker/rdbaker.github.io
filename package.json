@@ -1,0 +1,36 @@
+{
+  "name": "rdbaker.github.io",
+  "version": "1.0.0",
+  "description": "My personal site.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rdbaker/rdbaker.github.io.git"
+  },
+  "author": "Ryan Baker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rdbaker/rdbaker.github.io/issues"
+  },
+  "homepage": "https://github.com/Rdbaker/rdbaker.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "require-dir": "^0.3.0",
+    "url": "^0.11.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "bourbon-neat": "^1.8.0"
+  }
+}

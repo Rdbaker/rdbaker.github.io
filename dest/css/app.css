@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+#header-img-bg {
+  width: 100%; }
+  #header-img-bg img {
+    width: 100vw; }
+
+#header-img-headshot {
+  border: #ccc solid 5px;
+  border-radius: 100px; }
