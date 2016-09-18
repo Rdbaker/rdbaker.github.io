@@ -83,6 +83,10 @@ html {
     border-bottom: #ccc solid 2px;
     padding-bottom: 2px;
     margin-bottom: 2px; }
+  #content-container .content-wrapper .content-row .content-row-subtext {
+    color: #b6b6b6;
+    font-size: 0.85em;
+    font-style: italic; }
   #content-container .content-wrapper .content-row .content-row-content:last-child {
     margin-bottom: 0;
     padding-bottom: 45px; }
@@ -101,6 +105,12 @@ html {
     #content-container .content-wrapper .content-row .content-row-content .experience-row-position {
       margin-left: 10px;
       display: inline-block; }
+  #content-container .content-wrapper .content-row .skill-list li {
+    list-style: none;
+    display: inline-block; }
+    #content-container .content-wrapper .content-row .skill-list li img {
+      width: 60px;
+      background-color: white; }
 
 a {
   color: #f2f2f2;
