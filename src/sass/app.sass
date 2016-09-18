@@ -9,11 +9,11 @@
 
   position: absolute
   z-index: -1
-  top: -190px
+  top: -150px
 
   @media (min-width: 980px)
     // image width
-    top: -350px
+    top: -180px
 
   img
     width: 100vw
@@ -44,25 +44,32 @@
 
     .header-row
 
-      #header-location
-        border-right: $accent-grey-color solid 1px
-        padding-right: 10px
-
-      #header-position
-        border-left: $accent-grey-color solid 1px
-        padding-left: 10px
-
       .header-col
         display: inline
+        border-right: $accent-grey-color solid 1px
+        padding-right: 10px
+        padding-left: 10px
+
+      .header-col:first-child
+        padding-left: inherit
+
+      .header-col:last-child
+        padding-right: inherit
+        border-right: none
 
   .content-wrapper
-    width: 80%
     @include desktop
+      width: 70%
       margin-left: 20%
+      margin-right: 10%
     @include tablet
+      width: 60%
       margin-left: 30%
+      margin-right: 10%
     @include phone
+      width: 60%
       margin-left: 30%
+      margin-right: 10%
 
     #panel-tabs-container
       .panel-tab
@@ -72,12 +79,55 @@
         font-size: 20px
         margin-top: 10px
         margin-right: -4px
+        margin-bottom: 15px
         padding-bottom: 10px
         padding-top: 10px
-        border-left: $accent-grey-color solid 3px
+        border-right: $accent-grey-color solid 3px
+
+        &.active
+          background: tint($dark-grey-color, 15%)
 
         &:hover
           background: tint($dark-grey-color, 15%)
+
+      .panel-tab:first-child
+        border-left: $accent-grey-color solid 3px
+
+    .content-row
+      .content-row-header
+        border-bottom: $accent-grey-color solid 2px
+        padding-bottom: 2px
+        margin-bottom: 2px
+
+      .content-row-content:last-child
+        margin-bottom: 0
+        padding-bottom: 45px
+
+      .content-row-content
+        margin-top: 45px
+        margin-bottom: 45px
+
+        .experience-row-company
+          margin-bottom: 15px
+          font-size: 1.25em
+          display: inline-block
+
+        .experience-row-date
+          margin-left: 10px
+          font-size: 0.85em
+          font-style: italic
+          display: inline-block
+
+        .experience-row-position
+          margin-left: 10px
+          display: inline-block
+
+a
+  color: tint($light-grey-color, 50%)
+  text-decoration: none
+
+  &:hover
+    color: shade($light-grey-color, 10%)
 
 #header-name
   font-size: 40px

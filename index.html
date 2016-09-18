@@ -16,10 +16,10 @@
           Ryan Baker
         </div>
         <div class="header-row">
-          <span class="header-col" id="header-location">
+          <span class="header-col">
             Boston, MA
           </span>
-          <span class="header-col" id="header-position">
+          <span class="header-col">
             Software Engineer at Kyruus
           </span>
         </div>
@@ -27,24 +27,81 @@
 
       <div class="content-wrapper">
         <div id="panel-tabs-container">
-          <div class="panel-tab">
+          <div class="panel-tab" id="background-tab">
             Background
           </div>
-          <div class="panel-tab">
+          <div class="panel-tab" id="skills-tab">
             Skills
           </div>
-          <div class="panel-tab">
+          <div class="panel-tab" id="projects-tab">
             Projects
           </div>
         </div>
 
         <div>
+
           <div id="background-content">
+            <div class="content-row">
+              <h2 class="content-row-header">
+                Experience
+              </h2>
+              <div class="content-row-content">
+                <a href="https://www.kyruus.com" class="experience-row-company">
+                  Kyruus
+                </a>
+                <div class="experience-row-position">
+                  Software Engineer
+                </div>
+                <div class="experience-row-date">
+                  May 2016-present
+                </div>
+                <div class="experience-row-description">
+                  <p>Currently, I'm one of three software engineers on the search team. We're responsible for delivering a search service for internal applications and an API for our API customers to use.</p>
+                  <p>Our primary forcus is ensuring we have a sane and well documented response body and that any endpoint will return the expected data (or report an error) in a timely manner.</p>
+                </div>
+              </div>
+              <div class="content-row-content">
+                <a href="https://www.kyruus.com" class="experience-row-company">
+                  Kyruus
+                </a>
+                <div class="experience-row-position">
+                  DevOps Intern
+                </div>
+                <div class="experience-row-date">
+                  May 2015-May 2016 (intern then part-time)
+                </div>
+                <div class="experience-row-description">
+                  <p>Over another summer with Kyruus I gained experience working with our infrastructure. Specifically, I worked on and ended up leading a project that provides a platform for developers to spin up a new stack for their project and deploy their code to these new servers.</p>
+                  <p>Understanding our infrastructure on Amazon Web Services (AWS) was invaluable for me. It empowered me to debug and follow our applications under the hood, everything from internal network routing to continuous deployment from our Jenkins server and slaves.</p>
+                  <p>During two weeks of this summer at Kyruus I switched teams to create a prototype of the primary application, ProviderMatch, as a single page application (SPA) with one other engineer. During the first week we quickly iterated to build an application using Backone.Marionette.</p>
+                  <p>The second week of prototyping involved tweaking our prototype to make it as lightning fast as we possibly could. Most of this investigation involved using the Chrome developer tools and testing different JavaScript templating libraries.</p>
+                </div>
+              </div>
+              <div class="content-row-content">
+                <a href="https://www.kyruus.com" class="experience-row-company">
+                  Kyruus
+                </a>
+                <div class="experience-row-position">
+                  Software Engineer Intern
+                </div>
+                <div class="experience-row-date">
+                  May 2014-August 2014
+                </div>
+                <div class="experience-row-description">
+                  <p>I started my summer at Kyruus building small features and fixing small bugs for the main product (ProviderMatch). The last large thing I contributed to ProviderMatch was code to move user authentication from the application itself to the API it was hitting, effectively updating the API and application to new major versions.</p>
+                  <p>I then took the opportunity to build (from design to v1 in production), on my own, an internal tool for client services to use when adding new customers to our application. This tool allowed our internal teams to easily configure a new customer by filling out (or later editing or deleting) a web form. The API then is able to send a request to this service to retrieve the configuration for a given customer.</p>
+                  <p>The last project I did was to lead the design and implementation (as a team of three) of a metrics/reporting tool for customers. This tool would show our customers (clinical physicians) who was working in what specialty/subspecialty, as well as the types of patients they would see. This product reached its MVP state just as my internship finished.</p>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div id="skills-content">
           </div>
+
           <div id="projects-content">
           </div>
+
         </div>
       </div>
     </div>
