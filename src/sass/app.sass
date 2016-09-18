@@ -1,12 +1,87 @@
 @import bourbon
 @import neat
 
+@import ./mixins
+@import ./constants
+
 #header-img-bg
   @include fill-parent
+
+  position: absolute
+  z-index: -1
+  top: -190px
+
+  @media (min-width: 980px)
+    // image width
+    top: -350px
 
   img
     width: 100vw
 
+
 #header-img-headshot
-  border: #ccc solid 5px
+  border: $accent-grey-color solid 5px
   border-radius: 100px
+  margin-top: 110px
+  margin-left: 35px
+
+#content-container
+  border-top: 8px $accent-grey-color solid
+  width: 100%
+  margin-top: -100px
+  // remove these two styles later
+  min-height: 25px
+  background: $dark-grey-color
+  color: $light-grey-color
+
+  #header-content
+    @include desktop
+      margin-left: 20%
+    @include tablet
+      margin-left: 30%
+    @include phone
+      margin-left: 30%
+
+    .header-row
+
+      #header-location
+        border-right: $accent-grey-color solid 1px
+        padding-right: 10px
+
+      #header-position
+        border-left: $accent-grey-color solid 1px
+        padding-left: 10px
+
+      .header-col
+        display: inline
+
+  .content-wrapper
+    width: 80%
+    @include desktop
+      margin-left: 20%
+    @include tablet
+      margin-left: 30%
+    @include phone
+      margin-left: 30%
+
+    #panel-tabs-container
+      .panel-tab
+        display: inline-block
+        width: 33%
+        text-align: center
+        font-size: 20px
+        margin-top: 10px
+        margin-right: -4px
+        padding-bottom: 10px
+        padding-top: 10px
+        border-left: $accent-grey-color solid 3px
+
+        &:hover
+          background: tint($dark-grey-color, 15%)
+
+#header-name
+  font-size: 40px
+
+body
+  margin: 0
+  font-family: 'Raleway', sans-serif

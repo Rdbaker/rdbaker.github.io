@@ -5,10 +5,73 @@ html {
   box-sizing: inherit; }
 
 #header-img-bg {
-  width: 100%; }
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: -190px; }
+  @media (min-width: 980px) {
+    #header-img-bg {
+      top: -350px; } }
   #header-img-bg img {
     width: 100vw; }
 
 #header-img-headshot {
   border: #ccc solid 5px;
-  border-radius: 100px; }
+  border-radius: 100px;
+  margin-top: 110px;
+  margin-left: 35px; }
+
+#content-container {
+  border-top: 8px #ccc solid;
+  width: 100%;
+  margin-top: -100px;
+  min-height: 25px;
+  background: #404040;
+  color: #e4e4e4; }
+  @media (min-width: 1024px) {
+    #content-container #header-content {
+      margin-left: 20%; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #content-container #header-content {
+      margin-left: 30%; } }
+  @media (max-width: 768px) {
+    #content-container #header-content {
+      margin-left: 30%; } }
+  #content-container #header-content .header-row #header-location {
+    border-right: #ccc solid 1px;
+    padding-right: 10px; }
+  #content-container #header-content .header-row #header-position {
+    border-left: #ccc solid 1px;
+    padding-left: 10px; }
+  #content-container #header-content .header-row .header-col {
+    display: inline; }
+  #content-container .content-wrapper {
+    width: 80%; }
+    @media (min-width: 1024px) {
+      #content-container .content-wrapper {
+        margin-left: 20%; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #content-container .content-wrapper {
+        margin-left: 30%; } }
+    @media (max-width: 768px) {
+      #content-container .content-wrapper {
+        margin-left: 30%; } }
+    #content-container .content-wrapper #panel-tabs-container .panel-tab {
+      display: inline-block;
+      width: 33%;
+      text-align: center;
+      font-size: 20px;
+      margin-top: 10px;
+      margin-right: -4px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      border-left: #ccc solid 3px; }
+      #content-container .content-wrapper #panel-tabs-container .panel-tab:hover {
+        background: #5d5d5d; }
+
+#header-name {
+  font-size: 40px; }
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif; }
